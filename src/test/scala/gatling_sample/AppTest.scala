@@ -8,7 +8,7 @@ import io.gatling.core.scenario.Simulation
 class AppTest extends Simulation {
 
   setUp(
-    theScenarioBuilder.inject(atOnceUsers(1))
+    theScenarioBuilder.inject(atOnceUsers(10))
   ).protocols(theHttpProtocolBuilder)
 
 }
